@@ -7,6 +7,15 @@
 @* The contact view will have basic company information, such as phone number and email. The view will also have a contact form that will have
     fields for the user’s name, email, subject(choose from a list), and message body. There will need to be a submit button at the bottom of the
     contact form. This button however, won’t do anything with the data yet. For now it will just clear the text in the form. *@
+
+<!--bootstrap breadcrumbs-->
+<nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">@Html.ActionLink("Home", "Index")</li>
+        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+    </ol>
+</nav>
+
 <address>
     555 Missionary Street<br />
     Salt Lake City, UT 84044<br />
