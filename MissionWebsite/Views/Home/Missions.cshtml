@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Missions";
+}
+<!--bootstrap breadcrumbs-->
+<nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">@Html.ActionLink("Home", "Index")</li>
+        <li class="breadcrumb-item active" aria-current="page">Missions</li>
+    </ol>
+</nav>
+
+<h2>Missions</h2>
+
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Choose a Mission
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="@Url.Action("MissionFAQs", "Home",
+                                new {sMission = "Pennsylvania Pittsburgh",
+                                    sImage = "~/Content/images/PennsylvaniaFlag.png" },
+                                null)">Pennsylvania Pittsburgh</a>
+        </li>
+        <li><a href="@Url.Action("MissionFAQs", "Home",
+                                new {sMission = "Taiwan Taichung",
+                                    sImage = "~/Content/images/TaiwanFlag.png" },
+                                null)">Taiwan Taichung</a></li>
+        <li><a href="@Url.Action("MissionFAQs", "Home",
+                                new {sMission = "Tennessee Knoxville",
+                                    sImage = "~/Content/images/TennesseeFlag.jpg" },
+                                null)">Tennessee Knoxville</a></li>
+    </ul>
+</div>
+
